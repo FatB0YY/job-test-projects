@@ -1,0 +1,25 @@
+.container {
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: var(--system-radius-200);
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 4px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--system-spacing-500);
+  padding: var(--system-spacing-500);
+}
+
+.searchBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--system-spacing-200);
+}
+
+.resultsCount {
+  color: #666;
+}

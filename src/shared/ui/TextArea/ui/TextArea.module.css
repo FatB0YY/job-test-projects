@@ -1,0 +1,89 @@
+/* Wrapper */
+.wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--system-spacing-200);
+  width: 100%;
+}
+
+/* Text Area */
+.text {
+  background-color: var(--system-color-light-50);
+  border: 1px solid var(--system-color-neutral-300);
+  border-radius: var(--system-radius-200);
+  color: var(--system-color-dark-500);
+  height: 100%;
+  outline: none;
+  padding: var(--system-spacing-400);
+  position: relative;
+  resize: var(--resize-property, none);
+  transition: border var(--system-transition-200) ease;
+  width: 100%;
+}
+
+.text:hover {
+  border: 1px solid var(--system-color-neutral-500);
+}
+
+.text.focused {
+  border: 1px solid var(--system-color-action-500);
+}
+
+.text.disabled {
+  border: 1px solid var(--system-color-neutral-300);
+  color: var(--system-color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Resize Options */
+.verticalResize {
+  --resize-property: vertical;
+}
+
+.bothResize {
+  --resize-property: both;
+}
+
+.horizontalResize {
+  --resize-property: horizontal;
+}
+
+.defaultResize {
+  --resize-property: none;
+}
+
+/* Title */
+.title {
+  color: var(--system-color-dark-500);
+}
+
+.title.disabled,
+.text.disabled::placeholder,
+.count.disabled {
+  color: var(--system-color-neutral-500);
+}
+
+/* Count */
+.count {
+  bottom: var(--system-spacing-300);
+  color: var(--system-color-neutral-600);
+  position: absolute;
+  right: var(--system-spacing-300);
+}
+
+/* Textarea Wrapper */
+.textareaWrapper {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.text.error {
+  border: 1px solid var(--system-color-danger-500);
+}
+
+.error {
+  color: var(--system-color-danger-500);
+}

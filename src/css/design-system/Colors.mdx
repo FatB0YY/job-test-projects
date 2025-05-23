@@ -1,0 +1,365 @@
+import {
+  Meta,
+  ColorPalette,
+  ColorItem,
+  Title,
+  Subtitle,
+} from '@storybook/blocks'
+
+<Meta title="Design System/Colors" />
+{/* TODO: It would be great to automate this documentation */}
+
+<Title>Colors</Title>
+
+<Subtitle>The project uses the following variables for colors</Subtitle>
+
+## Main Colors
+
+<ColorPalette>
+  <ColorItem
+    title="system-color-action-"
+    subtitle="action- Colors"
+    colors={{
+      'action-100': '#F5F7FA',
+      'action-200': '#E9F2FB',
+      'action-300': '#DDEBF8',
+      'action-400': '#2781D3',
+      'action-500': '#0970CD',
+      'action-600': '#0955CD',
+      'action-700': '#0750C3',
+    }}
+  />
+  <ColorItem
+    title="system-color-success-"
+    subtitle="success- Colors"
+    colors={{
+      'success-300': '#F2FBF7',
+      'success-400': '#DCF4E9',
+      'success-500': '#23BC77',
+      'success-600': '#05B365',
+    }}
+  />
+  <ColorItem
+    title="system-color-warning-"
+    subtitle="warning- Colors"
+    colors={{
+      'warning-300': '#FFF9F2',
+      'warning-400': '#FFEFDB',
+      'warning-500': '#FF991F',
+    }}
+  />
+  <ColorItem
+    title="system-color-info-"
+    subtitle="info- Colors"
+    colors={{
+      'info-300': '#F6F3FB',
+      'info-400': '#E2D8F3',
+      'info-500': '#8E6BC7',
+    }}
+  />
+  <ColorItem
+    title="system-color-danger-"
+    subtitle="danger- Colors"
+    colors={{
+      'danger-200': '#FEF5F5',
+      'danger-300': '#FBE4E4',
+      'danger-400': '#E85555',
+      'danger-500': '#E53E3E',
+      'danger-600': '#D93B3B',
+      'danger-700': '#CC3737',
+    }}
+  />
+  <ColorItem
+    title="system-color-neutral-"
+    subtitle="neutral- Colors"
+    colors={{
+      'neutral-200': '#F5F5F5',
+      'neutral-300': '#EBEBEC',
+      'neutral-400': '#E1E1E2',
+      'neutral-500': '#A6A6A9',
+      'neutral-600': '#6B6B6F',
+    }}
+  />
+  <ColorItem
+    title="system-color-light-"
+    subtitle="light- Color"
+    colors={{
+      'light-500': '#FFFFFF',
+    }}
+  />
+  <ColorItem
+    title="system-color-dark-"
+    subtitle="dark- Colors"
+    colors={{
+      'dark-500': '#09090F',
+    }}
+  />
+  <ColorItem
+    title="system-color-dark-500-opaque"
+    subtitle="dark-500 Opaque "
+    colors={{
+      'dark-500-opaque-300': '#09090F5C',
+      'dark-500-opaque-100': '#09090F1F',
+    }}
+  />
+</ColorPalette>
+
+## Elements Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Background Colors"
+    subtitle="Various background colors used in the system"
+    colors={{
+      Accent: 'var(--system-color-action-500)',
+      Black: 'var(--system-color-dark-500)',
+      Default: 'var(--system-color-action-100)',
+      Neutral: 'var(--system-color-neutral-200)',
+      Surface: 'var(--system-color-light-500)',
+    }}
+  />
+  <ColorItem
+    title="Badge Colors"
+    subtitle="Colors used for badges"
+    colors={{
+      Blue: 'var(--system-color-action-400)',
+      Green: 'var(--system-color-success-500)',
+      Gray: 'var(--system-color-neutral-500)',
+      Orange: 'var(--system-color-warning-500)',
+      Purple: 'var(--system-color-info-500)',
+      Red: 'var(--system-color-danger-400)',
+    }}
+  />
+  <ColorItem
+    title="Button Attention Colors"
+    subtitle="Colors used for attention buttons"
+    colors={{
+      'Attention Default': 'var(--system-color-danger-500)',
+      'Attention Hover': 'var(--system-color-danger-600)',
+      'Attention Pressed': 'var(--system-color-danger-700)',
+    }}
+  />
+  <ColorItem
+    title="Button Disabled Colors"
+    subtitle="Colors used for disabled buttons"
+    colors={{
+      Disabled: 'var(--system-color-neutral-300)',
+    }}
+  />
+  <ColorItem
+    title="Button Ghost Colors"
+    subtitle="Colors used for ghost buttons"
+    colors={{
+      'Ghost Default': 'var(--system-color-light-500)',
+      'Ghost Focus': 'var(--system-color-action-200)',
+      'Ghost Hover': 'var(--system-color-action-200)',
+    }}
+  />
+  <ColorItem
+    title="Button Primary Colors"
+    subtitle="Colors used for primary buttons"
+    colors={{
+      'Primary Default': 'var(--system-color-action-500)',
+      'Primary Hover': 'var(--system-color-action-600)',
+      'Primary Pressed': 'var(--system-color-action-700)',
+    }}
+  />
+  <ColorItem
+    title="Button Secondary Colors"
+    subtitle="Colors used for secondary buttons"
+    colors={{
+      'Secondary Border': 'var(--system-color-action-200)',
+      'Secondary Default': 'var(--system-color-action-200)',
+      'Secondary Hover': 'var(--system-color-action-300)',
+      'Secondary Pressed': 'var(--system-color-action-300)',
+    }}
+  />
+  <ColorItem
+    title="Control Check, Radio and Toggle Colors"
+    subtitle="Colors used for check, radio and toggle elements"
+    colors={{
+      'Check Active': 'var(--system-color-action-500)',
+      'Check Default': 'var(--system-color-dark-500)',
+      'Check Disabled': 'var(--system-color-neutral-400)',
+      'Check Focus': 'var(--system-color-action-700)',
+      'Check Hover': 'var(--system-color-action-600)',
+    }}
+  />
+  <ColorItem
+    title="Control General Colors"
+    subtitle="Colors used for generals"
+    colors={{
+      'General Active': 'var(--system-color-action-500)',
+      'General Active Hover': 'var(--system-color-action-600)',
+      'General Default': 'var(--system-color-light-500)',
+      'General Disabled': 'var(--system-color-neutral-400)',
+      'General Hover': 'var(--system-color-neutral-200)',
+    }}
+  />
+  <ColorItem
+    title="Control Item Colors"
+    subtitle="Colors used for items"
+    colors={{
+      'Item Active': 'var(--system-color-action-200)',
+      'Item Hover': 'var(--system-color-action-100)',
+    }}
+  />
+  <ColorItem
+    title="Icon Colors"
+    subtitle="Colors used for icons"
+    colors={{
+      Accent: 'var(--system-color-action-500)',
+      Attention: 'var(--system-color-danger-500)',
+      Disabled: 'var(--system-color-neutral-500)',
+      Green: 'var(--system-color-success-600)',
+      'On Color': 'var(--system-color-light-500)',
+      Primary: 'var(--system-color-dark-500)',
+      Secondary: 'var(--system-color-neutral-500)',
+    }}
+  />
+  <ColorItem
+    title="Input Colors"
+    subtitle="Colors used for inputs"
+    colors={{
+      Background: 'var(--system-color-light-500)',
+      'Border Default': 'var(--system-color-neutral-300)',
+      'Border Error': 'var(--system-color-danger-400)',
+      'Border Focus': 'var(--system-color-action-500)',
+      'Border Hover': 'var(--system-color-neutral-500)',
+    }}
+  />
+  <ColorItem
+    title="Link Colors"
+    subtitle="Colors used for links"
+    colors={{
+      Focus: 'var(--system-color-action-700)',
+      Hover: 'var(--system-color-action-600)',
+      Primary: 'var(--system-color-action-500)',
+    }}
+  />
+  <ColorItem
+    title="Chart Colors"
+    subtitle="Colors used for charts"
+    colors={{
+      'Chart Blue': 'var(--system-color-action-400)',
+      'Chart Green': 'var(--system-color-success-500)',
+      'Chart Grey': 'var(--system-color-neutral-500)',
+      'Chart Orange': 'var(--system-color-warning-500)',
+      'Chart Purple': 'var(--system-color-info-500)',
+      'Chart Red': 'var(--system-color-danger-400)',
+      'Chart White': 'var(--system-color-light-500)',
+    }}
+  />
+  <ColorItem
+    title="Logo Colors"
+    subtitle="Colors used for logos"
+    colors={{
+      Logo: 'var(--system-color-action-500)',
+    }}
+  />
+  <ColorItem
+    title="Overlay Colors"
+    subtitle="Colors used for overlays"
+    colors={{
+      Overlay: 'var(--system-color-dark-500-opaque-300)',
+    }}
+  />
+  <ColorItem
+    title="Progress Colors"
+    subtitle="Colors used for progress"
+    colors={{
+      'Progress Active': 'var(--system-color-action-500)',
+      'Progress Inactive': 'var(--system-color-action-100)',
+    }}
+  />
+  <ColorItem
+    title="Scroll Colors"
+    subtitle="Colors used for scroll"
+    colors={{
+      Scroll: 'var(--system-color-dark-500-opaque-100)',
+    }}
+  />
+  <ColorItem
+    title="Status Blue Colors"
+    subtitle="Colors indicating status blue"
+    colors={{
+      'Blue Background': 'var(--system-color-action-100)',
+      'Blue Border': 'var(--system-color-action-300)',
+      'Blue Indicator': 'var(--system-color-action-400)',
+      'Blue Text': 'var(--system-color-action-400)',
+    }}
+  />
+  <ColorItem
+    title="Status Green Colors"
+    subtitle="Colors indicating status green"
+    colors={{
+      'Green Background': 'var(--system-color-success-300)',
+      'Green Border': 'var(--system-color-success-400)',
+      'Green Indicator': 'var(--system-color-success-500)',
+      'Green Text': 'var(--system-color-success-500)',
+    }}
+  />
+  <ColorItem
+    title="Status Grey Colors"
+    subtitle="Colors indicating status grey"
+    colors={{
+      'Grey Background': 'var(--system-color-neutral-200)',
+      'Grey Border': 'var(--system-color-neutral-400)',
+      'Grey Indicator': 'var(--system-color-neutral-500)',
+      'Grey Text': 'var(--system-color-neutral-500)',
+    }}
+  />
+  <ColorItem
+    title="Status Orange Colors"
+    subtitle="Colors indicating status orange"
+    colors={{
+      'Orange Background': 'var(--system-color-warning-300)',
+      'Orange Border': 'var(--system-color-warning-400)',
+      'Orange Indicator': 'var(--system-color-warning-500)',
+      'Orange Text': 'var(--system-color-warning-500)',
+    }}
+  />
+  <ColorItem
+    title="Status Purple Colors"
+    subtitle="Colors indicating status purple"
+    colors={{
+      'Purple Background': 'var(--system-color-info-300)',
+      'Purple Border': 'var(--system-color-info-400)',
+      'Purple Indicator': 'var(--system-color-info-500)',
+      'Purple Text': 'var(--system-color-info-500)',
+    }}
+  />
+  <ColorItem
+    title="Status Red Colors"
+    subtitle="Colors indicating status red"
+    colors={{
+      'Red Background': 'var(--system-color-danger-200)',
+      'Red Border': 'var(--system-color-danger-300)',
+      'Red Indicator': 'var(--system-color-danger-400)',
+      'Red Text': 'var(--system-color-danger-400)',
+    }}
+  />
+  <ColorItem
+    title="Stroke Colors"
+    subtitle="Colors used for strokes"
+    colors={{
+      Accent: 'var(--system-color-action-500)',
+      Blue: 'var(--system-color-action-200)',
+      Default: 'var(--system-color-neutral-300)',
+      Error: 'var(--system-color-danger-500)',
+      White: 'var(--system-color-light-500)',
+    }}
+  />
+  <ColorItem
+    title="Text Colors"
+    subtitle="Colors used for text"
+    colors={{
+      Accent: 'var(--system-color-action-500)',
+      Attention: 'var(--system-color-danger-500)',
+      Disabled: 'var(--system-color-neutral-500)',
+      'On Color': 'var(--system-color-light-500)',
+      Primary: 'var(--system-color-dark-500)',
+      Secondary: 'var(--system-color-neutral-600)',
+    }}
+  />
+</ColorPalette>

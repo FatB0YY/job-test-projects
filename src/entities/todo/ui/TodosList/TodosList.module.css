@@ -1,0 +1,19 @@
+.scroll {
+  height: 400px; /* virtualizer */
+  min-height: 400px; /* virtualizer */
+  overflow-y: auto; /* virtualizer */
+  margin-bottom: var(--system-spacing-400);
+  gap: 8px;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

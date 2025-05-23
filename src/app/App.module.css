@@ -1,0 +1,8 @@
+.container {
+  padding: var(--system-spacing-1000) 0;
+  height: 2400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--system-spacing-1000);
+}

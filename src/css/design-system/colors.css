@@ -1,0 +1,35 @@
+:root {
+  --system-color-action-100: #f5f7fa;
+  --system-color-action-200: #e9f2fb;
+  --system-color-action-300: #ddebf8;
+  --system-color-action-400: #2781d3;
+  --system-color-action-500: #0970cd;
+  --system-color-action-600: #0955cd;
+  --system-color-action-700: #0750c3;
+  --system-color-success-300: #f2fbf7;
+  --system-color-success-400: #dcf4e9;
+  --system-color-success-500: #23bc77;
+  --system-color-success-600: #05b365;
+  --system-color-warning-300: #fff9f2;
+  --system-color-warning-400: #ffefdb;
+  --system-color-warning-500: #ff991f;
+  --system-color-info-300: #f6f3fb;
+  --system-color-info-400: #e2d8f3;
+  --system-color-info-500: #8e6bc7;
+  --system-color-danger-200: #fef5f5;
+  --system-color-danger-300: #fbe4e4;
+  --system-color-danger-400: #e85555;
+  --system-color-danger-500: #e53e3e;
+  --system-color-danger-600: #d93b3b;
+  --system-color-danger-700: #cc3737;
+  --system-color-neutral-200: #f5f5f5;
+  --system-color-neutral-300: #ebebec;
+  --system-color-neutral-400: #e1e1e2;
+  --system-color-neutral-500: #a6a6a9;
+  --system-color-neutral-600: #6b6b6f;
+  --system-color-light-500: #fff;
+  --system-color-dark-500: #09090f;
+  --system-color-dark-500-opaque-300: #09090f5c;
+  --system-color-dark-500-opaque-200: #09090f38;
+  --system-color-dark-500-opaque-100: #09090f1f;
+}

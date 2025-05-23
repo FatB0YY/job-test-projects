@@ -1,0 +1,75 @@
+.container {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: all var(--popup-toggle-duration) ease;
+  z-index: 10;
+}
+
+.body {
+  background: var(--system-color-light-500);
+  border: 1px solid var(--system-color-neutral-300);
+  border-radius: var(--system-radius-300);
+  display: flex;
+  flex-direction: column;
+  min-width: 450px;
+  padding: var(--system-spacing-500) var(--system-spacing-600)
+    var(--system-spacing-800);
+}
+
+.opened {
+  opacity: 1;
+}
+
+.mounted {
+  pointer-events: auto;
+}
+
+.head {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.children {
+  width: 100%;
+}
+
+/* Animations */
+@keyframes flashIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flashOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animationFlashIn,
+.animationFlashOut {
+  animation-duration: var(--popup-toggle-duration);
+  animation-fill-mode: forwards;
+}
+
+.animationFlashIn {
+  animation-name: flashIn;
+}
+
+.animationFlashOut {
+  animation-name: flashOut;
+}

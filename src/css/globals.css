@@ -1,0 +1,10 @@
+@import url('./design-system/colors.css');
+@import url('./design-system/typography.css');
+@import url('./design-system/spacing.css');
+@import url('./design-system/radius.css');
+@import url('./design-system/transition.css');
+@import url('./reset.css');
+
+body {
+  background: var(--system-color-action-100);
+}

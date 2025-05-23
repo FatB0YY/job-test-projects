@@ -1,0 +1,5 @@
+:root {
+  --system-transition-none: 0;
+  --system-transition-100: 200ms;
+  --system-transition-500: 1000ms;
+}

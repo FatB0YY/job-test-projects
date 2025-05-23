@@ -1,0 +1,31 @@
+.container {
+  background-color: var(--divider-color);
+  border-radius: 50px;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+}
+
+.orientation-horizontal {
+  height: var(--divider-size, 1px);
+  margin: var(--divider-margin) 0;
+  width: 100%;
+}
+
+.orientation-vertical {
+  height: 100%;
+  margin: 0 var(--divider-margin);
+  width: var(--divider-size, 1px);
+}
+
+.size-100 {
+  --divider-size: 1px;
+}
+
+.size-200 {
+  --divider-size: 2px;
+}
+
+.size-300 {
+  --divider-size: 3px;
+}

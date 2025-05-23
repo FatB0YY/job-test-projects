@@ -1,0 +1,40 @@
+import { Meta, Title, Source, Subtitle } from '@storybook/blocks'
+
+<Meta title="Design System/Radius" />
+{/* TODO: It would be great to automate this documentation */}
+<Title>Radius</Title>
+
+<Subtitle>The project uses the following variables for rounding</Subtitle>
+
+<table className="storybook-table">
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+    <th>View</th>
+    <th>Variable</th>
+  </tr>
+  {[
+    { name: 'Radius none', value: '0', key: 'none' },
+    { name: 'Radius 100', value: '4px', key: '100' },
+    { name: 'Radius 200', value: '8px', key: '200' },
+    { name: 'Radius 300', value: '12px', key: '300' },
+    { name: 'Radius 400', value: '16px', key: '400' },
+    { name: 'Radius 500', value: '24px', key: '500' },
+    { name: 'Radius 600', value: '32px', key: '600' },
+    { name: 'Radius max', value: '1000px', key: 'max' },
+  ].map((radius) => (
+    <tr>
+      <td>{radius.name}</td>
+      <td>{radius.value}</td>
+      <td className="storybook-radius-view__td">
+        <div
+          className="storybook-radius-view"
+          style={{ borderRadius: `var(--system-radius-${radius.key})` }}
+        />
+      </td>
+      <td>
+        <Source language="css" code={`var(--system-radius-${radius.key})`} />
+      </td>
+    </tr>
+  ))}
+</table>

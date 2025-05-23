@@ -1,0 +1,125 @@
+.container {
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: var(--system-transition-100);
+}
+
+.section {
+  display: inline-flex;
+  transform: opacity var(--system-transition-100);
+}
+
+.hiddenSection {
+  opacity: 0;
+}
+
+.loading {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+
+/* Primary */
+.variant-primary {
+  background-color: var(--system-color-action-500);
+  color: var(--system-color-light-500);
+}
+
+.variant-primary:hover {
+  background-color: var(--system-color-action-600);
+}
+
+.variant-primary:active {
+  background-color: var(--system-color-action-700);
+}
+
+.variant-primary:disabled {
+  background-color: var(--system-color-neutral-300);
+  color: var(--system-color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Secondary */
+.variant-secondary {
+  background-color: var(--system-color-action-200);
+  color: var(--system-color-action-500);
+}
+
+.variant-secondary:hover {
+  background-color: var(--system-color-action-300);
+}
+
+.variant-secondary:active {
+  background-color: var(--system-color-action-300);
+}
+
+.variant-secondary:disabled {
+  background-color: var(--system-color-neutral-300);
+  color: var(--system-color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Ghost */
+.variant-ghost {
+  background-color: transparent;
+  color: var(--system-color-action-500);
+}
+
+.variant-ghost:hover {
+  background-color: var(--system-color-action-200);
+}
+
+.variant-ghost:active {
+  background-color: var(--system-color-action-300);
+}
+
+.variant-ghost:disabled {
+  background-color: var(--system-color-neutral-300);
+  color: var(--system-color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Danger */
+.variant-danger {
+  background-color: var(--system-color-danger-500);
+  color: var(--system-color-light-500);
+}
+
+.variant-danger:hover {
+  background-color: var(--system-color-danger-600);
+}
+
+.variant-danger:active {
+  background-color: var(--system-color-danger-700);
+}
+
+.variant-danger:disabled {
+  background-color: var(--system-color-neutral-300);
+  color: var(--system-color-neutral-500);
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.size-100 {
+  border-radius: var(--system-radius-200);
+  gap: calc(var(--system-spacing-200) + var(--system-spacing-100));
+  padding: var(--system-spacing-200);
+}
+
+.size-200 {
+  border-radius: var(--system-radius-200);
+  gap: calc(var(--system-spacing-200) + var(--system-spacing-100));
+  padding: var(--system-spacing-300);
+}
+
+.size-300 {
+  border-radius: var(--system-radius-200);
+  gap: calc(var(--system-spacing-300) + var(--system-spacing-100));
+  padding: var(--system-spacing-400) var(--system-spacing-500);
+}

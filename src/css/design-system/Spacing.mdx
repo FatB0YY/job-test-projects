@@ -1,0 +1,54 @@
+import { Meta, Title, Source, Subtitle } from '@storybook/blocks'
+
+<Meta title="Design System/Spacing" />
+{/* TODO: It would be great to automate this documentation */}
+<Title>Spacing</Title>
+
+<Subtitle>
+  The following variables are used in the project to create margins
+</Subtitle>
+
+<table className="storybook-table">
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Padding</th>
+    <th>Margin</th>
+    <th>Variable</th>
+  </tr>
+  {[
+    { name: 'Spacing none', value: '0', key: 'none' },
+    { name: 'Spacing 100', value: '2px', key: '100' },
+    { name: 'Spacing 200', value: '4px', key: '200' },
+    { name: 'Spacing 300', value: '8px', key: '300' },
+    { name: 'Spacing 400', value: '12px', key: '400' },
+    { name: 'Spacing 500', value: '16px', key: '500' },
+    { name: 'Spacing 600', value: '20px', key: '600' },
+    { name: 'Spacing 700', value: '24px', key: '700' },
+    { name: 'Spacing 800', value: '32px', key: '800' },
+    { name: 'Spacing 900', value: '40px', key: '900' },
+    { name: 'Spacing 1000', value: '48px', key: '1000' },
+  ].map((spacing) => (
+    <tr>
+      <td>{spacing.name}</td>
+      <td>{spacing.value}</td>
+      <td className="storybook-spacing-padding-container__td">
+        <div
+          className="storybook-spacing-padding-container"
+          style={{ padding: `var(--system-spacing-${spacing.key})` }}
+        >
+          <div className="storybook-spacing-padding-container__content" />
+        </div>
+      </td>
+      <td>
+        <div
+          className="storybook-spacing-margin-item"
+          style={{ height: `var(--system-spacing-${spacing.key})` }}
+        />
+      </td>
+      <td>
+        <Source language="css" code={`var(--system-spacing-${spacing.key})`} />
+      </td>
+    </tr>
+  ))}
+</table>

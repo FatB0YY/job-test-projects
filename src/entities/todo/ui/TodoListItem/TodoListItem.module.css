@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--system-color-neutral-200);
+  border: 1px solid var(--system-color-neutral-400);
+  transition: all var(--system-transition-100) ease;
+  border-radius: var(--system-radius-200);
+  padding: var(--system-spacing-200);
+}
+
+.item:hover {
+  background-color: var(--system-color-action-200);
+}
+.field {
+  padding: var(--system-spacing-100) var(--system-spacing-200);
+}
+
+.title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: var(--system-spacing-300);
+}

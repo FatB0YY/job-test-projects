@@ -1,0 +1,10 @@
+.overlay {
+  align-items: center;
+  background: var(--system-color-dark-500-opaque-300);
+  cursor: pointer;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: -1;
+}
