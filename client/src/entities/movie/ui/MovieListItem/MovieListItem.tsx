@@ -10,7 +10,7 @@ interface MovieListItemProps {
 }
 
 export const MovieListItem = memo(({ movie, onChange }: MovieListItemProps) => {
-  const { id, isCompleted, title, description } = movie
+  const { isCompleted, title, description } = movie
 
   const handleClick = () => {
     onChange?.(movie)

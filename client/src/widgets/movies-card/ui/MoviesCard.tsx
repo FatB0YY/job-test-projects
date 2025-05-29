@@ -23,6 +23,8 @@ export const MoviesCard: FC = () => {
   /* selectedMovies - POST-запрос на сервер в будущем */
   const [selectedMovies, setSelectedMovies] = useState<MovieType[]>([])
 
+  console.log('selectedMovies', selectedMovies)
+
   const fetchMovie = useCallback(
     async (search: string, page: number, controller?: AbortController) => {
       setStatus(EntryStatusObj.LOADING)
