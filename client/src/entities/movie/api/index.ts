@@ -22,7 +22,7 @@ export const getMovie = async (
   return await fetchData<GetMovieResponseType>({
     endpoint: 'list',
     // TODO: env
-    baseUrl: 'https://job-test-projects.vercel.app/api',
+    baseUrl: 'http://localhost:4001/api',
     signal,
     params,
   })
