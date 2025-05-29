@@ -4,13 +4,13 @@
     "sourceMap": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "api",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["api/*"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["api/**/*"],
   "exclude": ["node_modules", "dist"],
   "ts-node": {
     "files": true

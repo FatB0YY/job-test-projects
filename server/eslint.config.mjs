@@ -10,7 +10,7 @@ export default [
     ignores: ['dist/'],
   },
   {
-    files: ['src/**/*.{js,ts,jsx,tsx}', 'tests/**/*.{js,ts,jsx,tsx}'],
+    files: ['api/**/*.{js,ts,jsx,tsx}', 'tests/**/*.{js,ts,jsx,tsx}'],
   },
   {
     files: ['**/*.js'],
