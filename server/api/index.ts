@@ -5,6 +5,7 @@ import cors from 'cors'
 import express, { Express, json } from 'express'
 import path from 'path'
 
+import { config } from './config'
 import { errorHandler, notFoundHandler } from './middlewares/errorHandler'
 import { router } from './routes/index.routes'
 
@@ -25,17 +26,17 @@ app.use('/api', router)
 app.use(notFoundHandler)
 app.use(errorHandler)
 
-// const PORT = config.port
-// const main = () => {
-//   try {
-//     app.listen(PORT, () => {
-//       console.log(`Server is running on port: ${PORT}`)
-//     })
-//   } catch (error) {
-//     console.error(error)
-//     process.exit(1)
-//   }
-// }
-// main()
+const PORT = config.port
+const main = () => {
+  try {
+    app.listen(PORT, () => {
+      console.log(`Server is running on port: ${PORT}`)
+    })
+  } catch (error) {
+    console.error(error)
+    process.exit(1)
+  }
+}
+main()
 
-export default app
+// export default app
